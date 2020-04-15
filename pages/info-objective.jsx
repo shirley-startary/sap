@@ -49,7 +49,7 @@ export default class extends React.Component {
               </Grid>
               <CardActions>
                 <Grid container justify="flex-end" alignItems="flex-end">
-                  <Link href={`/trivia/?id=${objective.index}`} key={objective.title} className="button">
+                  <Link href={`/trivia/?id=${objective.index - 1}-0`} key={objective.title} className="button">
                     <a className="objective">
                       <Fab color="secondary" aria-label="add" variant="extended">
                         <SportsEsportsIcon />
