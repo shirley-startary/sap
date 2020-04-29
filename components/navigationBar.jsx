@@ -50,9 +50,10 @@ const NavigationBar = () => (
         position: fixed;
         z-index: 100;
         background: #FFF;
-        padding:  15px 0px 10px 0px ;
+        padding:  10px 0px 20px 0px ;
         text-align: center;
         height:70px;
+        box-shadow: 2px 2px 2px #ccc;
       }
       .menu ul {
         display:flex;
@@ -63,7 +64,7 @@ const NavigationBar = () => (
       }
       .menu ul li {
         display: inline-block;
-        font-size: 14px;
+        font-size: 20px;
         margin: 5px;
         cursor: pointer;
       }
@@ -75,11 +76,22 @@ const NavigationBar = () => (
       .menu i {
         display: block;
       }
-      
       i img {
-        width: 40px;  
-        height: 40px;
-      }    
+        width: 50px;  
+        height: 50px;
+      }  
+      @media screen and (max-width: 640px) and (min-width: 0px) {
+        i img {
+          width: 40px;  
+          height: 40px;
+        }
+        .menu ul li {
+          font-size: 14px;
+        }
+        header {
+          padding:  10px 0px 10px 0px ;
+        }
+      }
     `}
     </style>
   </>

@@ -94,7 +94,6 @@ const InfoONG = (props) => {
             display: grid;
             grid-gap: 30px;
             padding: 10%;
-            box-shadow: 3px 3px 3px grey;
           }
           @media screen and (max-width: 640px) and (min-width: 0px) {
             .programs {
@@ -110,10 +109,6 @@ const InfoONG = (props) => {
           font-family: system-ui;
           background: #F7F7F7;
         }
-        .position {
-          padding-top:95px;
-          max-width:1090px;
-          margin: 0 auto;
       `}
       </style>
     </div>
