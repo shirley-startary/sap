@@ -16,7 +16,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Button from '@material-ui/core/Button';
-
 import NavigationBar from '../components/navigationBar';
 import objectives from '../data/objectives';
 
@@ -50,6 +49,7 @@ const Trivia = (props) => {
     setContador(contador);
     setOpen(false);
   };
+  localStorage.setItem('respuestas', JSON.stringify(respuestas));
 
   const handleChange = (event) => {
     const newArr = [...respuestas]; // copying the old datas array
