@@ -5,9 +5,8 @@ import Link from '@material-ui/core/Link';
 import Fab from '@material-ui/core/Fab';
 import imageCirculo from '../images/splash/Circulo.png';
 import imageFondo from '../images/splash/Fondo.png';
-import imageLogoJA from '../images/splash/LogoJA.png';
+import imageLogoEduca from '../images/splash/LogoEduca.png';
 import imageSAP from '../images/splash/SAP.png';
-
 
 const App = () => (
   <>
@@ -37,7 +36,7 @@ const App = () => (
       </Box>
       <Box
         style={{
-          height: '30vh',
+          height: '10vh',
           width: '100%',
         }}
         display="flex"
@@ -62,7 +61,7 @@ const App = () => (
       </Box>
       <Box
         style={{
-          height: '',
+          height: 'auto',
           width: '100%',
           position: 'fixed',
           bottom: 0,
@@ -71,9 +70,10 @@ const App = () => (
         }}
         display="flex"
         justifyContent="space-between"
+        alignItems="center"
       >
         <img
-          src={imageLogoJA}
+          src={imageLogoEduca}
           alt="LogoJA"
           className="logos"
 
@@ -92,17 +92,22 @@ const App = () => (
         padding: 0;
       }
       .circle {
-        width: 80%;
+        width: 85%;
       }
       .logos {
+        height: 80%;
+        padding: 5px;
         width: 40%;
       }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1180px) {
           .circle {
-            width: 30%;
+            width: 40%;
           }
           .logos {
-            width: 25%;
+            height: 80%;
+            padding: 5px;
+            width: 30%;
+            
           }
         }
       `}
