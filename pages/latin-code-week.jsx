@@ -39,7 +39,7 @@ const LatinCodeWeek = () => {
               <Grid item xs={12}>
                 <div className="containerCountrys">
                   <div>
-                    {Object.keys(Paises).map(pais => (<img src={Paises[pais]} />))}
+                    {Object.keys(paises).map(pais => (<img src={paises[pais]} />))}
                   </div>
                 </div>
               </Grid>
