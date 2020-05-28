@@ -59,7 +59,6 @@ export default class extends React.Component {
                   </Link>
                 </Grid>
               </CardActions>
-
             </CardContent>
           </Card>
         </div>
