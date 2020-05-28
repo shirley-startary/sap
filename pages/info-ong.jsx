@@ -6,27 +6,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import NavigationBar from '../components/navigationBar';
 import programsOng from '../data/programs';
-import paises from '../data/paises'
-
-const color = {
-  1: '#eb1c2d',
-  2: '#D3A029',
-  3: '#279B48',
-  4: '#C31F33',
-  5: '#EF402B',
-  6: '#26AED9',
-  7: '#FCB712',
-  8: '#8F1838',
-  9: '#F36D26',
-  10: '#E11484',
-  11: '#F99D26',
-  12: '#CF8D2A',
-  13: '#48773D',
-  14: '#187DBC',
-  15: '#3EB049',
-  16: '#0D568B',
-  17: '#183668',
-};
+import paises from '../data/paises';
+import colorsObjective from '../data/colorsObjectives';
 
 const InfoONG = (props) => {
   const { programs } = props;
@@ -59,7 +40,7 @@ const InfoONG = (props) => {
                 <Grid item xs={12}>
                   {program.ods.map(item => (
                     <IconButton>
-                      <span style={{ backgroundColor: color[item], color: 'white', padding: '4px' }}>{item}</span>
+                      <span style={{ backgroundColor: colorsObjective[item], color: 'white', padding: '4px' }}>{item}</span>
                     </IconButton>
                   ))}
                   {program.paises.map(pais => (
