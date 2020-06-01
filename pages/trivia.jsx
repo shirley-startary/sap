@@ -185,9 +185,12 @@ const Trivia = (props) => {
                           )
                         }
                         <DialogActions>
-                          <Button onClick={handleClose} color="primary" autoFocus>
+                          {/* <Button onClick={handleClose} color="primary" autoFocus>
                             Siguiente
-                          </Button>
+                          </Button> */}
+                          <Fab onClick={handleClose} color="secondary" aria-label="add" variant="extended">
+                            Siguiente
+                          </Fab>
                         </DialogActions>
                       </Dialog>
                     </Grid>
