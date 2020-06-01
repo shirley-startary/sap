@@ -49,13 +49,11 @@ export default class extends React.Component {
               </Grid>
               <CardActions>
                 <Grid container justify="flex-end" alignItems="flex-end">
-                  <Link href={`/trivia/?id=${objective.index}`} key={objective.title} className="button">
-                    <a className="objective">
-                      <Fab color="secondary" aria-label="add" variant="extended">
-                        <SportsEsportsIcon />
-                        Trivia
-                      </Fab>
-                    </a>
+                  <Link href={`/trivia/?id=${objective.index}`} key={objective.title}>
+                    <Fab color="secondary" aria-label="add" variant="extended" className="init-trivia">
+                      <SportsEsportsIcon />
+                      Trivia
+                    </Fab>
                   </Link>
                 </Grid>
               </CardActions>
@@ -71,10 +69,7 @@ export default class extends React.Component {
             .information {
               padding: 10%;
             }
-            .objective {
-              text-decoration: none;
-            }
-            .button {
+            .init-trivia {
               margin-left: auto;
               margin: 25%;
             }
