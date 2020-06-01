@@ -152,7 +152,7 @@ const Trivia = (props) => {
                         aria-describedby="alert-dialog-description"
                       >
                         {objective.trivia[contador].respuestaCorrecta
-                          === Object.values(respuestas[contador])[0]
+                          === respuestas[contador][`Pregunta${contador + 1}`]
                           ? (
                             <>
                               <DialogTitle id="alert-dialog-title">Correcto!</DialogTitle>
