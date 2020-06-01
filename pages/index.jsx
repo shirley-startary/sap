@@ -44,7 +44,6 @@ const App = () => (
         alignItems="flex-start"
       >
         <Link href="/objectives">
-          <a>
             <Fab
               aria-label="add"
               variant="extended"
@@ -56,7 +55,6 @@ const App = () => (
             >
               INGRESA
             </Fab>
-          </a>
         </Link>
       </Box>
       <Box
