@@ -49,16 +49,24 @@ export default class extends React.Component {
               </Grid>
               <CardActions>
                 <Grid container justify="flex-end" alignItems="flex-end">
-                  <Link href={`/trivia/?id=${objective.index}`} key={objective.title}>
-                    <Fab color="secondary" aria-label="add" variant="extended" className="init-trivia">
+                  {/* <Link href={`/trivia/?id=${objective.index}`} key={objective.title}>
+                    <Fab color="secondary" aria-label="add" variant="extended" className="init-trivia button-Fixed">
                       <SportsEsportsIcon />
                       Trivia
                     </Fab>
-                  </Link>
+                  </Link> */}
                 </Grid>
               </CardActions>
             </CardContent>
           </Card>
+          <Link href={`/trivia/?id=${objective.index}`} key={objective.title}>
+            <div className="button-Fixed">
+              <span className="font">
+                <SportsEsportsIcon />
+                Trivia
+              </span>
+            </div>
+          </Link>
         </div>
 
         <style jsx>
@@ -78,6 +86,31 @@ export default class extends React.Component {
                 padding-top: 30%;
               }
             }
+            .button-Fixed {
+              display:flex;
+              position:fixed;
+              bottom: 20px;
+              right: 20px;
+              background: #f50057;
+              color:#FFF;
+              width: auto;
+              min-width: 48px;
+              height: 48px;
+              min-height: auto;
+              border-radius: 24px;
+              font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+              letter-spacing: 0.02857em;
+              text-transform: uppercase;
+            }
+            .font {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding:0 16px;
+              font-size: 0.875rem;
+            }
+            
           `}
         </style>
         <style jsx global>
