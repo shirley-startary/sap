@@ -155,7 +155,7 @@ const Trivia = (props) => {
                           === respuestas[contador][`Pregunta${contador + 1}`]
                           ? (
                             <>
-                              <DialogTitle id="alert-dialog-title">Correcto!</DialogTitle>
+                              <DialogTitle id="alert-dialog-title" className="">Correcto!</DialogTitle>
                               <DialogContent>
                                 <DialogContentText id="alert-dialog-description">
                                   <Typography variant="body1" gutterBottom>
@@ -215,6 +215,7 @@ const Trivia = (props) => {
               padding-top: 30%;
             }
           }
+          
         `}
       </style>
       <style jsx global>
